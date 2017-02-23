@@ -1,0 +1,690 @@
+/*重置css*/
+
+html {
+	word-wrap: break-word;
+	word-break: break-all;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+	font: 14px/24px "Microsoft Yahei", "PingFang SC", Helvetica, Arial, "Hiragino Sans GB", STHeiTi, sans-serif;
+	background: #fff;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: middle;
+	-webkit-tap-highlight-color: transparent;
+	tap-highlight-color: transparent;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+ul,
+ol,
+li,
+dl {
+	list-style: none
+}
+
+address,
+cite,
+dfn,
+em,
+var,
+i {
+	font-style: normal
+}
+
+img {
+	vertical-align: top
+}
+
+input,
+select,
+textarea {
+	outline: 0;
+	box-shadow: none;
+	font-size: 14px;
+}
+
+body {
+	background: #fff;
+}
+
+a {
+	-webkit-tap-highlight-color: transparent;
+	-webkit-tap-highlight-color: transparent;
+	text-decoration: none;
+	color: #333;
+}
+
+
+/*a:hover,a:active{-webkit-tap-highlight-color:transparent;-webkit-tap-highlight-color:transparent;background-color:transparent;}*/
+
+input::-webkit-input-placeholder {
+	color: #999
+}
+
+input::-moz-placeholder {
+	color: #999
+}
+
+input::-ms-input-placeholder {
+	color: #999
+}
+
+dfn {
+	color: #999;
+}
+
+table {
+	border-collapse: collapse;
+	border: none;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+*html .clearfix {
+	height: 1%;
+}
+
+*+html .clearfix {
+	height: 1%;
+}
+
+
+/*重置css end*/
+
+
+/*公用样式*/
+
+.full {
+	width: 100%;
+}
+
+.content-box {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.left {
+	padding: 16px;
+	display: inline-block;
+	width: 850px;
+}
+
+.right {
+	padding: 16px;
+	display: inline-block;
+	width: 345px;
+}
+
+.more {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.p {
+	padding: 0 16px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.white {
+	background: #fff;
+}
+
+.min-width {
+	min-width: 1200px;
+}
+
+
+/*公用样式结束*/
+
+body {
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0, startColorStr=#c2e2f5, endColorStr=fff);
+	/*IE 6 7 8*/
+	background: -ms-linear-gradient(top, #c2e2f5, #fff);
+	/* IE 10 */
+	background: -moz-linear-gradient(top, #c2e2f5, #fff);
+	/*火狐*/
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#c2e2f5), to(#fff));
+	/*谷歌*/
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#c2e2f5), to(#fff));
+	/* Safari 4-5, Chrome 1-9*/
+	background: -webkit-linear-gradient(top, #c2e2f5, #fff);
+	/*Safari5.1 Chrome 10+*/
+	background: -o-linear-gradient(top, #c2e2f5, #fff);
+	/*Opera 11.10+*/
+	/*背景从上到下渐变*/
+}
+
+.content-box {
+	background: #fff;
+}
+
+.banner {
+	width: 100%;
+	min-width: 1200px;
+}
+
+.banner .full {
+	position: relative;
+}
+
+.banner .bd img {
+	width: 100%;
+}
+
+.banner #slideBox .hd {
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+}
+
+.banner #slideBox .hd ul li {
+	margin: 0 2px;
+	display: inline-block;
+	width: 18px;
+	height: 4px;
+	background: #b2deff;
+	text-indent: -9999px;
+}
+
+.banner #slideBox .hd ul li.on {
+	background: #0c82dc;
+}
+
+.logo {
+	position: absolute;
+	top: 50%;
+	left: 20%;
+	transform: translate(-20%, -50%);
+	-ms-transform: translate(-20%, -50%);
+	/* IE 9 */
+	-moz-transform: translate(-20%, -50%);
+	/* Firefox */
+	-webkit-transform: translate(-20%, -50%);
+	/* Safari 和 Chrome */
+	-o-transform: translate(-20%, -50%);
+	/* Opera */
+	z-index: 99;
+}
+
+.banner nav {
+	width: 100%;
+	background: #0c82dc;
+}
+
+nav .content-box {
+	background: transparent;
+}
+
+.top-menu {
+	font-size: 0;
+	/*word-spacing: -4px;*/
+	/*display: inline-block;间隙问题*/
+}
+
+.top-menu li {
+	width: 136px;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	/*间隙问题*/
+}
+
+.top-menu li a {
+	padding: 20px 40px;
+	display: block;
+	width: 100%;
+	font-size: 14px;
+	text-align: center;
+	color: #fff;
+}
+
+.top-menu li a:hover {
+	background: #2998ea;
+}
+
+.top-menu li a.on {
+	background: #2998ea;
+}
+
+.news-state #slideBox2 {
+	position: relative;
+}
+
+.news-banner {
+	position: relative;
+	display: inline-block;
+	width: 402px;
+}
+
+.news-state #slideBox2 .bd ul li {
+	position: relative;
+}
+
+.news-tit {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 99;
+	padding-left: 10px;
+	display: block;
+	width: 100%;
+	color: #fff;
+	background: rgba(46, 89, 139, .5);
+	/*背景透明文字不透明*/
+}
+
+.news-state #slideBox2 .hd {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.news-state #slideBox2 .hd ul li {
+	margin: 0 2px;
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	color: #fff;
+	text-align: center;
+	line-height: 18px;
+	background: #1f354e;
+	cursor: pointer;
+}
+
+.news-state #slideBox2 .hd ul li.on {
+	color: #6faee2;
+	background: #fff;
+}
+
+.news-list {
+	padding-left: 16px;
+	display: inline-block;
+	width: 410px;
+	height: 248px;
+	overflow: hidden;
+}
+
+.news-list h3 {
+	position: relative;
+}
+
+.news-list h3:after {
+	content: '';
+	position: absolute;
+	bottom: -3px;
+	right: 0;
+	width: 70%;
+	height: 2px;
+	background: #dcdcdc;
+}
+
+.news-list h3 span {
+	padding: 4px 0;
+	font-weight: bold;
+	color: #000;
+}
+
+.news-list h3 span:before {
+	content: '';
+	position: absolute;
+	left: 0%;
+	bottom: -3px;
+	width: 60px;
+	height: 2px;
+	background: #0c82dc;
+}
+
+.news-list h3 span:after {
+	content: '';
+	position: absolute;
+	left: 18%;
+	bottom: -3px;
+	width: 20px;
+	height: 2px;
+	background: #0c82dc;
+}
+
+.news-list ul {}
+
+.news-list ul li {
+	position: relative;
+	margin-top: 10px;
+}
+
+.news-list ul li a {
+	display: inline-block;
+	width: 80%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	/*超出部分显示省略号*/
+}
+
+.news-list li span {
+	position: absolute;
+	right: 0;
+	font-size: 12px;
+	color: #999;
+}
+
+.news-info {
+	width: 100%;
+	height: 248px;
+	overflow: hidden;
+}
+
+.news-info li:first-child {
+	padding: 5px 0 5px 40px;
+	font-size: 18px;
+	color: #fff;
+	background: #0c82dc;
+	list-style-type: none;
+}
+
+.news-info li:first-child:before {
+	content: '';
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #8cb8d3;
+}
+
+.news-info li {
+	position: relative;
+	padding: 5px 0;
+	width: 100%;
+	background: #f2f2f2;
+}
+
+.news-info li:before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	width: 4px;
+	height: 4px;
+	background: #ea0001;
+}
+
+.news-info li a {
+	padding-left: 25px;
+	display: block;
+	width: 90%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.news-info li:last-child {
+	padding-bottom: 0;
+}
+
+.news-info li:last-child:before {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.news-info li:last-child img {
+	width: 100%;
+}
+
+.news2 .news-list:first-child {
+	padding-left: 0;
+	width: 402px;
+}
+
+.news2 .hd {
+	position: relative;
+}
+
+.news2 .hd ul {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.news2 .hd ul li {
+	margin-top: 0;
+	display: inline-block;
+}
+
+.news2 .hd ul li a {
+	padding: 0 5px;
+	display: block;
+	width: 100%;
+	color: #000;
+}
+
+#slideBox3 .bd ul li span {
+	right: 28px;
+}
+
+#slideBox3 .hd ul li.on a {
+	color: #fff;
+	background: #0c82dc;
+}
+
+.video-wrap {
+	padding: 5px;
+	border: 1px solid #dadada;
+}
+
+.video-wrap h3 {
+	font-size: 16px;
+	font-weight: bold;
+	color: #000;
+}
+
+.pic {
+	margin: 0 16px;
+	border: 1px solid #dadada;
+}
+
+.pic-one {
+	padding: 16px 0;
+	display: inline-block;
+	width: 139px;
+	border-right: 1px solid #dadada;
+}
+
+.bg {
+	padding: 30px 0;
+	margin: 0 auto;
+	width: 108px;
+	text-align: center;
+	background: url(../images/bg.png);
+}
+
+.bg span {
+	display: block;
+	font-size: 16px;
+	color: #0c82dc;
+}
+
+.picMarquee-left {
+	display: inline-block;
+	width: 1000px;
+	overflow: hidden;
+}
+
+.picMarquee-left ul li {
+	margin: 10px 20px 0;
+	width: 163px;
+}
+
+.show {
+	height: 203px;
+	overflow: hidden;
+}
+
+.show li {
+	margin-right: 10px;
+	display: inline-block;
+}
+
+.show li:last-child {
+	margin-right: 0;
+}
+
+.show li img {
+	width: 260px;
+}
+
+.problems .news-list {
+	width: 100%;
+	height: 203px;
+	overflow: hidden;
+}
+
+.problems .news-list li:before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	width: 4px;
+	height: 4px;
+	background: #ea0001;
+}
+
+.problems .news-list li a {
+	padding-left: 25px;
+	display: block;
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.problems .news-list h3 span:after {
+	left: 22%;
+	width: 10px;
+}
+
+.foot {
+	background: #15449a;
+}
+
+.foot .content-box {
+	background: #15449a;
+}
+
+.link {
+	display: inline-block;
+	width: 520px;
+}
+
+.link h3 {
+	font-size: 16px;
+	color: #fff;
+}
+
+.link li {
+	position: relative;
+	padding-left: 10px;
+	display: inline-block;
+	width: 150px;
+	margin-right: 20px;
+}
+
+.link li:before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+	border-left: 6px solid #fff;
+}
+
+.link li:last-child {
+	width: auto;
+}
+
+.link li a {
+	color: #fff;
+}
+
+.address {
+	display: inline-block;
+	padding-top: 26px;
+	height: 102px;
+	color: #fff;
+}
+
+.weixin {
+	padding: 0 20px;
+	display: inline-block;
+}
+
+.weixin p {
+	color: #fff;
+	text-align: center;
+}
+
+.foot .full:first-child {
+	min-width: 1200px;
+	border-bottom: 1px solid #3460b0;
+}
+
+.footer div {
+	color: #fff;
+}
+
+.footer div:last-child {
+	padding-bottom: 5px;
+}
+
+.msg {
+	padding: 5px 0;
+	text-align: center;
+}
+
+.msg span {
+	display: inline-block;
+	color: #fff;
+	margin: 0 10px;
+}
